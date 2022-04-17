@@ -1,0 +1,374 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,700;0,800;1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+.page {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.page > .side-nav {
+  width: 20%;
+  min-height: 100vh;
+  height: 100%;
+  padding: 30px;
+  background: linear-gradient(rgb(55, 188, 250), rgb(42, 62, 175));
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  color: #fff;
+  position: fixed;
+}
+.page > .side-nav ul {
+  list-style: none;
+}
+.page > .side-nav > ul span {
+  font-size: 14px;
+}
+
+.page > .side-nav > ul li {
+  padding: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+.page > .side-nav > ul > li a {
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+.page > .main {
+  width: 78%;
+  padding: 40px 10px;
+  margin-left: 20%;
+}
+
+.welcome {
+  padding: 30px 0;
+}
+.welcome h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.welcome > .message-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.message-card {
+  width: 45%;
+  padding: 30px;
+  border: 1px solid rgb(55, 185, 245);
+  text-align: center;
+  border-radius: 30px;
+}
+.message-card > h4 {
+  margin: 10px 0;
+}
+
+.favicon {
+  padding: 30px 0;
+}
+.favicon > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.favicon > .favicon-form {
+  width: 90%;
+  margin: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.inside {
+  width: 99%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.form-image {
+  padding: 10px;
+  margin: 20px auto;
+  width: 26%;
+  border-radius: 10px;
+  border: 1px solid rgb(77, 220, 245);
+}
+img {
+  width: 90%;
+  margin: auto;
+}
+.form-input {
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.form-input > .inner-input {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.form-input > .inner-input label {
+  font-size: 13px;
+  font-weight: 600;
+}
+.form-input > .inner-input input[type="text"] {
+  color: rgb(55, 185, 245);
+  padding: 10px;
+  border: 1px solid rgb(55, 185, 245);
+  border-radius: 5px;
+}
+.update {
+  margin-bottom: 20px;
+  padding: 10px 40px;
+  border-radius: 7px;
+  border: 1px solid rgb(55, 185, 245);
+  background: rgb(55, 185, 245);
+  color: #fff;
+  transition: ease 0.3s;
+}
+.update:hover {
+  background: #fff;
+  color: rgb(55, 185, 245);
+  cursor: pointer;
+}
+.user {
+  padding: 30px 0;
+}
+.user > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.user > .user-form-container {
+  width: 60%;
+  margin: auto;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.user-form-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-image img {
+  width: 30%;
+  border-radius: 20px;
+  border: 1px solid rgb(55, 185, 245);
+}
+.user-other {
+  width: 70%;
+}
+.user-input-types {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+.user-input-types label {
+  font-size: 13px;
+  font-weight: 600;
+}
+.user-input-types input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(55, 185, 245);
+}
+.user-input-file {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+.user-input-file label {
+  font-size: 13px;
+  font-weight: 600;
+}
+.user-button {
+  padding: 10px;
+  background: rgb(55, 185, 245);
+  color: #fff;
+  border-radius: 5px;
+  margin: 20px auto;
+  border: 1px solid rgb(55, 185, 245);
+  transition: ease 0.3s;
+  cursor: pointer;
+  position: relative;
+  left: 40%;
+}
+.user-button:hover {
+  color: rgb(55, 185, 245);
+  background: #fff;
+}
+.admin-info {
+  padding: 30px 0;
+}
+.admin-info > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.admin-info > .admin-info-container {
+  width: 50%;
+  padding: 30px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.admin-info-inner {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 10px auto;
+}
+.admin-input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.admin-input label {
+  font-size: 13px;
+  font-weight: 600;
+}
+.admin-input input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(55, 185, 245);
+}
+.admin-info-button {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(55, 185, 245);
+  background: rgb(55, 185, 245);
+  color: #fff;
+  width: fit-content;
+  margin-left: 5%;
+
+  transition: ease 0.3s;
+}
+.admin-info-button:hover {
+  background: #fff;
+  color: rgb(55, 185, 245);
+  cursor: pointer;
+}
+.about {
+  padding: 30px 0;
+}
+.about > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about-form-container {
+  width: 50%;
+  padding: 30px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+.about-inner,
+.about-input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.about-input label {
+  font-size: 13px;
+  font-weight: 600;
+}
+.about-input input[type="text"],
+.about-input textarea {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(55, 185, 245);
+}
+.about-button {
+  padding: 10px;
+  border: 1px solid rgb(55, 185, 245);
+  background: rgb(55, 185, 245);
+  color: #fff;
+  border-radius: 10px;
+  transition: ease 0.3s;
+  margin-top: 10px;
+}
+.about-button:hover {
+  color: rgb(55, 185, 245);
+  background: #fff;
+  cursor: pointer;
+}
+
+.table-container {
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+table {
+  padding: 10px;
+}
+th,
+td {
+  border-bottom: 1px solid rgb(55, 185, 245);
+  padding: 10px;
+  text-align: center;
+}
+.edit {
+  padding: 8px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(55, 185, 245);
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.delete {
+  padding: 8px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(46, 96, 153);
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.visit {
+  padding: 8px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgb(96, 39, 172);
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.projects {
+  padding: 30px 0;
+}
+.projects > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.projectcontainer {
+  width: 60%;
+  padding: 30px;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+@media (max-width: 914px) {
+  .message-card {
+    width: 90%;
+  }
+}
